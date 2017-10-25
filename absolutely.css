@@ -1,3 +1,4 @@
+*{margin:0;padding:0;}
 body {
 	text-align : center;
 	font-family : Tahoma;
@@ -9,8 +10,182 @@ body {
 	text-align : left;
 	width : 700px;
 	margin : 100px auto;
-	min-height : 600px;
+	min-height: 600px;
 	background-image : url(bg.jpg);
 	border : 4px solid red;
+	position: relative;
 }
 
+#humanfactor {
+
+    color: blue;
+    position: relative;
+}
+
+#humanfactor #humanfactortext {
+    visibility: hidden;
+    width: 210px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 7px 0px 7px 4px;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+
+}
+
+#humanfactor:hover #humanfactortext {
+    visibility: visible;
+}
+
+#whitebackground {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 1px 3px 1px 8px;
+	margin-top: 10px;
+	line-height: 18px;
+}
+
+#title {
+	position: relative;
+	bottom: 170px;
+	left: 20px;
+}
+
+#hammer {
+	position: relative;
+	bottom: 70px;
+	left: 0px;
+	transition: all 0.5s;
+}
+
+#saw {
+	position: relative;
+	top: 50px;
+	right: 355px;
+	transition: all 0.5s;
+}
+
+#pincers {
+	position: relative;
+	bottom: 5px;
+	left: 560px;
+	transition: all 0.5s;
+}
+
+#screwdriver {
+	position: relative;
+	bottom: 130px;
+	left: 350px;
+	transition: all 0.5s;
+}
+
+#grad {
+    background: black; 
+    background: linear-gradient(black, grey); 
+    overflow: hidden;
+}
+
+#grad a {
+	color: #474747;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style-type: none;
+    padding-bottom: 8px
+}
+
+#grad:hover a {
+	color: black;
+}
+
+#grad:hover {
+	background: linear-gradient(white, white);
+}
+    
+}
+
+p {
+	padding: none;
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 18px 3px 10px 0px;
+}
+
+ul li {
+	text-decoration-style: none;
+	list-style-type: none;
+	display: block;
+	position: relative;
+}
+
+#toolbox {
+    position: relative;
+	bottom: 20px;
+	right: 175px;
+}
+
+ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    bottom: -60px;
+    left: -8px;
+}
+
+ul a {
+	border: black 1px solid;
+    color: black;
+    padding: 6px 7px 6px 7px;
+    text-decoration: none;
+    display: block;
+}
+
+#toolbox:hover ul {
+    display: block;
+    position: absolute;
+}
+
+span ul a:hover {
+	background-color: #ced132;
+	color: black
+}
+
+span ul a {
+	color: grey;
+} 
+
+#hammer:hover {
+	position: relative;
+	bottom: 60px;
+	left: -10px;
+	transition: all 0.5s;
+}
+
+#saw:hover {
+	position: relative;
+	top: 70px;
+	right: 330px;
+	transition: all 0.5s;
+}
+
+#pincers:hover {
+	position: relative;
+	bottom: 5px;
+	left: 530px;
+	transition: all 0.5s;
+}
+
+#screwdriver:hover {
+	position: relative;
+	bottom: 120px;
+	left: 330px;
+	transition: all 0.5s;
+}
